@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Csci5115_Munchies">
         <activity
+            android:name=".FriendsRecommendations"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
