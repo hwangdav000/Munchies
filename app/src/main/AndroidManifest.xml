@@ -21,6 +21,9 @@
             android:name=".PersonalityQuizActivity"
             android:exported="false" />
         <activity
+            android:name=".FriendsRecommendations"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
