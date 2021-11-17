@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Csci5115_Munchies">
         <activity
-            android:name=".FriendsRecommendations"
+            android:name=".SampleFriend"
             android:exported="false" />
+        <!--<activity
+            //android:name=".FriendsRecommendations"
+            android:exported="false" />-->
         <activity
-            android:name=".MainActivity"
+            android:name=".FriendsRecommendations"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
