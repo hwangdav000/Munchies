@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Csci5115_Munchies" >
         <activity
-            android:name=".RecipePage"
+            android:name=".MainActivity"
             android:exported="false"
             android:label="@string/title_activity_recipe_page"
             android:theme="@style/Theme.Csci5115_Munchies.NoActionBar" />
@@ -21,7 +21,7 @@
             android:name=".PersonalityQuizActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".RecipePage"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
