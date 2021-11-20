@@ -14,43 +14,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-<!--        <RelativeLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="150dp"-->
-<!--            android:layout_marginStart="10dp"-->
-<!--            android:layout_marginTop="25dp"-->
-<!--            android:layout_marginEnd="10dp"-->
-<!--            android:orientation="horizontal"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent">-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/recipeImg"-->
-<!--                android:layout_width="150dp"-->
-<!--                android:layout_height="150dp"-->
-<!--                android:layout_alignParentStart="true"-->
-<!--                android:layout_alignParentLeft="true"-->
-<!--                android:src="@drawable/potatoimg" />-->
-
-<!--            <TextView-->
-<!--                android:id="@+id/recipeName"-->
-<!--                android:layout_width="250dp"-->
-<!--                android:layout_height="150dp"-->
-<!--                android:layout_marginLeft="150dp"-->
-<!--                android:gravity="center"-->
-<!--                android:text="Creamy Potato Soup"-->
-<!--                android:textSize="34sp" />-->
-
-<!--            <TextView-->
-<!--                android:id="@+id/recipe"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_marginTop="155dp"-->
-<!--                android:gravity="center"-->
-<!--                android:text="Yum!"-->
-<!--                android:textSize="26sp" />-->
-<!--        </RelativeLayout>-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
