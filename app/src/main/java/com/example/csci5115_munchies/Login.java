@@ -1,14 +1,19 @@
 package com.example.csci5115_munchies;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.widget.Button;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class Login extends AppCompatActivity {
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.login);
+
+        button = (Button) findViewById(R.id.button);
     }
+
+
 }
