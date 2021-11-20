@@ -16,18 +16,19 @@
             android:name=".FavoritePage"
             android:exported="false"
             android:label="@string/title_activity_favorite_page" />
-            android:name=".PersonalityQuizRecommendation"
-            android:exported="false" />
         <activity
             android:name=".RecipePage"
             android:exported="false"
             android:label="@string/title_activity_recipe_page"
             android:theme="@style/Theme.Csci5115_Munchies.NoActionBar" />
         <activity
-            android:name=".PersonalityStart"
+            android:name=".Login"
             android:exported="false" />
         <activity
             android:name=".PersonalityQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PersonalityQuizRecommendation"
             android:exported="false" />
         <activity
             android:name=".SampleFriend"
@@ -36,7 +37,7 @@
             android:name=".FriendsRecommendations"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".PersonalityStart"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

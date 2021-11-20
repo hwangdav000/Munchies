@@ -2,7 +2,9 @@ package com.example.csci5115_munchies;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class PersonalityQuizRecommendation extends AppCompatActivity {
 
@@ -10,5 +12,11 @@ public class PersonalityQuizRecommendation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personality_quiz_recommendation);
+    }
+
+    /** Clicking recipe goes to page */
+    public void gotoRecipe(View view) {
+        Intent intent = new Intent(this, RecipePage.class);
+        startActivity(intent);
     }
 }
