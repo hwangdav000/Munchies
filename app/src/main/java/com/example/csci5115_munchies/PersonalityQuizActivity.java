@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class PersonalityQuizActivity extends AppCompatActivity {
 
-    private PersonalityQuestions questionLibrary = new PersonalityQuestions();
+    private final PersonalityQuestions questionLibrary = new PersonalityQuestions();
     private int questionNum = 0;
 
     @Override
@@ -48,13 +48,13 @@ public class PersonalityQuizActivity extends AppCompatActivity {
             questionNum--;
         }
 
-        TextView qText= (TextView)findViewById(R.id.question);
+        TextView qText= findViewById(R.id.question);
         qText.setText(questionLibrary.getQuestion(questionNum));
-        TextView c0Text= (TextView)findViewById(R.id.Choice0);
+        TextView c0Text= findViewById(R.id.Choice0);
         c0Text.setText(questionLibrary.getChoice0(questionNum));
-        TextView c1Text= (TextView)findViewById(R.id.Choice1);
+        TextView c1Text= findViewById(R.id.Choice1);
         c1Text.setText(questionLibrary.getChoice1(questionNum));
-        TextView c2Text= (TextView)findViewById(R.id.Choice2);
+        TextView c2Text= findViewById(R.id.Choice2);
         c2Text.setText(questionLibrary.getChoice2(questionNum));
     }
 
