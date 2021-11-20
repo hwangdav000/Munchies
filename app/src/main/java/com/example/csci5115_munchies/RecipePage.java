@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.RatingBar;
 
 import com.example.csci5115_munchies.databinding.ActivityRecipePageBinding;
 
@@ -21,5 +22,7 @@ public class RecipePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_page);
+        final RatingBar ratingBar = findViewById(R.id.ratingBar);
+        ratingBar.setRating((float) 3.56);
     }
 }
