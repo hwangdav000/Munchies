@@ -6,21 +6,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
 
-public class Login extends AppCompatActivity {
+public class Register extends AppCompatActivity {
     private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.register);
 
-        button = findViewById(R.id.button);
+        button = (Button) findViewById(R.id.toHome);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openHome();
             }
         });
+
     }
 
     public void openHome() {
@@ -28,8 +29,8 @@ public class Login extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void signUp(View view) {
-        Intent intent = new Intent(this, Register.class);
+    public void backLogin(View view) {
+        Intent intent = new Intent(this, Login.class);
         startActivity(intent);
     }
 }
