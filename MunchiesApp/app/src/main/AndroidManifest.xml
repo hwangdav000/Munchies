@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.csci5115_munchies">
+    package="com.example.munchiesapp">
 
     <application
         android:allowBackup="true"
@@ -8,16 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Csci5115_Munchies">
-        <activity
-            android:name=".FriendsRecommendations"
-            android:exported="false" />
-        <activity
-            android:name=".SampleFriend"
-            android:exported="false" />
-        <activity
-            android:name=".FriendsRecommendations"
-            android:exported="false" />
+        android:theme="@style/Theme.MunchiesApp">
         <activity
             android:name=".MainActivity"
             android:exported="true">
