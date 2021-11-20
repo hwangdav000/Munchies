@@ -1,12 +1,12 @@
 package com.example.csci5115_munchies;
 
 public class PersonalityQuestions {
-    private String[] Questions = {
+    private final String[] Questions = {
         "What is your favorite\n subject in class?",
         "Which of these colors do you prefer?",
         "Are you an introvert or an extrovert?"
     };
-    private String[][] Choices = {
+    private final String[][] Choices = {
             {"Gym", "Math/Science", "Art"},
             {"Blue", "Green", "Red"},
             {"Introvert", "Extrovert", "Neither"}
