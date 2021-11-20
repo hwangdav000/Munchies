@@ -12,7 +12,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-        button = (Button) findViewById(R.id.button);
+        //button = (Button) findViewById(R.id.button);
     }
 
 
