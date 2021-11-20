@@ -36,13 +36,8 @@
             android:name=".FriendsRecommendations"
             android:exported="false" />
         <activity
-<<<<<<< HEAD
             android:name=".Login"
             android:exported="true" >
-=======
-            android:name=".MainActivity"
-            android:exported="true">
->>>>>>> 2331453d672af44474959efda25dc333d889805e
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
