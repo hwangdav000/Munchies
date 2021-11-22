@@ -11,7 +11,7 @@ public class Zuko extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zuko);
+        setContentView(R.layout.samplefriend_zuko);
     }
     public void goToRecipe(View view){
         Intent intent = new Intent(this, RecipePage.class);

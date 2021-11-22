@@ -11,7 +11,7 @@ public class Batman extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_batman);
+        setContentView(R.layout.samplefriend_batman);
     }
     public void goToRecipe(View view){
         Intent intent = new Intent(this, RecipePage.class);

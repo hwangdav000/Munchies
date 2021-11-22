@@ -11,7 +11,7 @@ public class Karen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_karen);
+        setContentView(R.layout.samplefriend_karen);
     }
     public void goToRecipe(View view){
         Intent intent = new Intent(this, RecipePage.class);
