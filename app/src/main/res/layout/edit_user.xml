@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blue_gradient">
+    android:background="@drawable/blue_gradient"
+    tools:context=".EditName">
 
     <TextView
         android:id="@+id/EditName"
@@ -28,11 +29,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="164dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="ID"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="ID"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EditID" />
 
@@ -40,13 +39,11 @@
         android:id="@+id/LastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="164dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Last Name"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Last Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FirstName" />
 
@@ -70,12 +67,13 @@
         android:id="@+id/FirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="First Name"
-        app:layout_constraintTop_toBottomOf="@+id/EditName"
-        tools:layout_editor_absoluteX="37dp" />
+        android:hint="First Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditName" />
 
     <TextView
         android:id="@+id/ChangePhoto"
@@ -109,13 +107,11 @@
         android:id="@+id/SaveUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="78dp"
-        android:layout_marginEnd="151dp"
-        android:layout_marginBottom="83dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="95dp"
         android:text="APPLY CHANGES"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PhotoButton" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
