@@ -30,13 +30,13 @@
             android:name=".PersonalityQuizActivity"
             android:exported="false" />
         <activity
-            android:name=".SampleFriend"
-            android:exported="false" />
-        <activity
-            android:name=".FriendsRecommendations"
+            android:name=".Batman"
             android:exported="false" />
         <activity
             android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".FriendsRecommendations"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -9,6 +9,18 @@
     <string name="ingredients">ingredients</string>
     <string name="friends">friends</string>
     <string name="title_activity_recipe_page">RecipePage</string>
+    <string name="batman_profile">
+        "Name: Batman\n"
+        "Bio: Loving father of nine children and counting. Shout out to Alfred!\n"
+    </string>
+    <string name="zuko_profile">
+        "Name: Zuko\n"
+        "Bio: I have a lot of honor and familial love. I really love my sister and father and my mother is always present.\n"
+    </string>
+    <string name="karen_profile">
+        "Name: Karen Notarealperson\n"
+        "Bio: Live, Love, Laugh!\n"
+    </string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 

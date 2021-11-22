@@ -6,15 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".FriendsRecommendations">
 
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="208dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Friends"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="374dp"
-        android:layout_height="586dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,6 +40,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="#3F51B5"
+                android:clickable="true"
+                android:onClick="goToBatman"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -31,10 +50,9 @@
                     android:layout_width="19dp"
                     android:layout_height="150dp"
                     android:layout_weight="1"
-                    android:onClick="goToFriend"
+                    android:adjustViewBounds="false"
+                    android:src="@drawable/batman"
                     android:visibility="visible"
-                    tools:src="@tools:sample/avatars"
-                    tools:srcCompat="@tools:sample/avatars"
                     tools:visibility="visible" />
 
                 <TextView
@@ -42,14 +60,14 @@
                     android:layout_width="115dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="TextView"
-                    tools:text="@tools:sample/lorem/random" />
+                    android:text="@string/batman_profile" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="#B53F3F"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -57,22 +75,22 @@
                     android:layout_width="19dp"
                     android:layout_height="150dp"
                     android:layout_weight="1"
-                    tools:src="@tools:sample/avatars"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:onClick="goToFriend"
+                    android:src="@drawable/zuko" />
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="115dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="TextView"
-                    tools:text="@tools:sample/lorem/random" />
+                    android:text="@string/zuko_profile" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="#8BC34A"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -80,36 +98,18 @@
                     android:layout_width="19dp"
                     android:layout_height="150dp"
                     android:layout_weight="1"
-                    tools:src="@tools:sample/avatars"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:onClick="goToFriend"
+                    android:src="@drawable/fake_friend_3" />
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="115dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="TextView"
-                    tools:text="@tools:sample/lorem/random" />
+                    android:text="@string/karen_profile" />
 
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="240dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Friends"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/scrollView2"
-        app:layout_constraintHorizontal_bias="0.372"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
