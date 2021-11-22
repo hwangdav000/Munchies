@@ -6,16 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class RecommendPage extends AppCompatActivity {
+public class Zuko extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recommend_page);
+        setContentView(R.layout.activity_zuko);
     }
-
-    public void goToFriendsRec(View view){
-        Intent intent = new Intent(this, FriendsRecommendations.class);
+    public void goToRecipe(View view){
+        Intent intent = new Intent(this, RecipePage.class);
         startActivity(intent);
     }
 }

@@ -51,6 +51,7 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:clickable="false"
                     android:src="@drawable/batman"
                     android:visibility="visible"
                     tools:visibility="visible" />
@@ -68,6 +69,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#B53F3F"
+                android:clickable="true"
+                android:onClick="goToZuko"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -75,7 +78,7 @@
                     android:layout_width="19dp"
                     android:layout_height="150dp"
                     android:layout_weight="1"
-                    android:onClick="goToFriend"
+                    android:clickable="false"
                     android:src="@drawable/zuko" />
 
                 <TextView
@@ -91,6 +94,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#8BC34A"
+                android:clickable="true"
+                android:onClick="goToKaren"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -98,7 +103,7 @@
                     android:layout_width="19dp"
                     android:layout_height="150dp"
                     android:layout_weight="1"
-                    android:onClick="goToFriend"
+                    android:clickable="false"
                     android:src="@drawable/fake_friend_3" />
 
                 <TextView

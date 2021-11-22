@@ -18,4 +18,14 @@ public class FriendsRecommendations extends AppCompatActivity {
         Intent intent = new Intent(this, Batman.class);
         startActivity(intent);
     }
+
+    public void goToZuko(View view){
+        Intent intent = new Intent(this, Zuko.class);
+        startActivity(intent);
+    }
+
+    public void goToKaren(View view){
+        Intent intent = new Intent(this, Karen.class);
+        startActivity(intent);
+    }
 }
