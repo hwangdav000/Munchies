@@ -114,4 +114,7 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="favorites">Favorites</string>
+    <string name="creamy_potato_soup">Creamy Potato Soup</string>
+    <string name="recommend">Recommend</string>
 </resources>

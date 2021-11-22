@@ -29,7 +29,7 @@ public class RecommendPage extends AppCompatActivity {
             }
         });
 
-        ImageButton friendsButton = (ImageButton) findViewById(R.id.imageButton);
+        ImageButton friendsButton = (ImageButton) findViewById(R.id.imageButton3);
         friendsButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(RecommendPage.this, FriendsRecommendations.class));
@@ -37,8 +37,11 @@ public class RecommendPage extends AppCompatActivity {
         });
     }
 
+    /*
     public void goToFriendsRec(View view){
         Intent intent = new Intent(this, FriendsRecommendations.class);
         startActivity(intent);
     }
+    */
+
 }
