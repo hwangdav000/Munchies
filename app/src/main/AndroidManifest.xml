@@ -11,6 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Csci5115_Munchies">
         <activity
+            android:name=".IngredientsRecommendation3"
+            android:exported="false" />
+        <activity
+            android:name=".IngredientsRecommendation2"
+            android:exported="false" />
+        <activity
+            android:name=".IngredientsRecommendation"
+            android:exported="true" />
+        <activity
             android:name=".Karen"
             android:exported="false" />
         <activity
