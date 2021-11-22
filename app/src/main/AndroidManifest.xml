@@ -33,6 +33,9 @@
             android:name=".PersonalityQuizActivity"
             android:exported="false" />
         <activity
+            android:name=".PersonalityQuizRecommendation"
+            android:exported="false" />
+        <activity
             android:name=".SampleFriend"
             android:exported="false" />
         <activity
