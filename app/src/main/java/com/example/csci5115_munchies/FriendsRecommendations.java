@@ -14,8 +14,18 @@ public class FriendsRecommendations extends AppCompatActivity {
         setContentView(R.layout.activity_friends_recommendations);
     }
 
-    public void goToFriend(View view){
-        Intent intent = new Intent(this,SampleFriend.class);
+    public void goToBatman(View view){
+        Intent intent = new Intent(this, Batman.class);
+        startActivity(intent);
+    }
+
+    public void goToZuko(View view){
+        Intent intent = new Intent(this, Zuko.class);
+        startActivity(intent);
+    }
+
+    public void goToKaren(View view){
+        Intent intent = new Intent(this, Karen.class);
         startActivity(intent);
     }
 }

@@ -36,14 +36,20 @@ public class PersonalityQuizActivity extends AppCompatActivity {
     private void updateQuestion(int a){
         if (a == 0){
             // check if reached last question
-            if (questionNum == questionLibrary.getSize()-1){
-                exitQuiz();
+            if (questionNum >= questionLibrary.getSize()-1){
+                Intent intent = new Intent(this, PersonalityQuizRecommendation.class);
+                startActivity(intent);
+                finish();
+                return;
             }
             questionNum++;
         } else {
             // if you click back at the first question, leave quiz
             if (questionNum == 0){
-                exitQuiz();
+                Intent intent = new Intent(this, PersonalityStart.class);
+                startActivity(intent);
+                finish();
+                return;
             }
             questionNum--;
         }
@@ -58,10 +64,5 @@ public class PersonalityQuizActivity extends AppCompatActivity {
         c2Text.setText(questionLibrary.getChoice2(questionNum));
     }
 
-    /** Start button starts the quiz */
-    public void exitQuiz() {
-        Intent intent = new Intent(this, PersonalityStart.class);
-        startActivity(intent);
-    }
 
 }

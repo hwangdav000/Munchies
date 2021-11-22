@@ -6,16 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class PersonalityQuizRecommendation extends AppCompatActivity {
+public class Batman extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_personality_quiz_recommendation);
+        setContentView(R.layout.samplefriend_batman);
     }
-
-    /** Clicking recipe goes to page */
-    public void gotoRecipe(View view) {
+    public void goToRecipe(View view){
         Intent intent = new Intent(this, RecipePage.class);
         startActivity(intent);
     }

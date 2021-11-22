@@ -6,9 +6,16 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Csci5115_Munchies">
+        <activity
+            android:name=".Karen"
+            android:exported="false" />
+        <activity
+            android:name=".Zuko"
+            android:exported="false" />
         <activity
             android:name=".RecommendPage"
             android:exported="true" />
@@ -16,6 +23,7 @@
             android:name=".FavoritePage"
             android:exported="false"
             android:label="@string/title_activity_favorite_page" />
+        <activity
             android:name=".PersonalityQuizRecommendation"
             android:exported="false" />
         <activity
@@ -30,20 +38,36 @@
             android:name=".PersonalityQuizActivity"
             android:exported="false" />
         <activity
-            android:name=".SampleFriend"
-            android:exported="false" />
-        <activity
-            android:name=".FriendsRecommendations"
+            android:name=".Batman"
             android:exported="false" />
         <activity
             android:name=".Login"
-            android:exported="true" >
+            android:exported="false" />
+        <activity
+            android:name=".FriendsRecommendations"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".AddFriend"
+            android:exported="false" />
+        <activity
+            android:name=".RemoveFriend"
+            android:exported="false" />
+        <activity
+            android:name=".EditName"
+            android:exported="false" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

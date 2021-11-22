@@ -37,4 +37,8 @@ public class RecommendPage extends AppCompatActivity {
         });
     }
 
+    public void goToFriendsRec(View view){
+        Intent intent = new Intent(this, FriendsRecommendations.class);
+        startActivity(intent);
+    }
 }
