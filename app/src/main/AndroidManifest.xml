@@ -30,7 +30,7 @@
             android:exported="true" />
         <activity
             android:name=".FavoritePage"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_favorite_page" />
         <activity
             android:name=".PersonalityQuizRecommendation"
@@ -41,7 +41,7 @@
             android:label="@string/title_activity_recipe_page"
             android:theme="@style/Theme.Csci5115_Munchies.NoActionBar" />
         <activity
-            android:name=".PersonalityStart"
+            android:name=".FriendsRecommendations"
             android:exported="false" />
         <activity
             android:name=".PersonalityQuizActivity"
@@ -50,10 +50,10 @@
             android:name=".Batman"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".PersonalityStart"
             android:exported="false" />
         <activity
-            android:name=".FriendsRecommendations"
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
