@@ -41,7 +41,7 @@
             android:label="@string/title_activity_recipe_page"
             android:theme="@style/Theme.Csci5115_Munchies.NoActionBar" />
         <activity
-            android:name=".PersonalityStart"
+            android:name=".FriendsRecommendations"
             android:exported="false" />
         <activity
             android:name=".PersonalityQuizActivity"
@@ -53,7 +53,7 @@
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".FriendsRecommendations"
+            android:name=".PersonalityStart"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
