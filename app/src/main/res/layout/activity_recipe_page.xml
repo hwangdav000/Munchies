@@ -16,6 +16,7 @@
         app:menu="@menu/bottom_navigation_menu" />
 
     <ScrollView
+        android:layout_marginTop="70dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -140,8 +141,9 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:text="
-                1. Place bacon pieces in a large Dutch Oven or soup pot over medium heat and cook until bacon is crisp and browned.
+                android:layout_marginBottom="20dp"
+                android:text=
+                "1. Place bacon pieces in a large Dutch Oven or soup pot over medium heat and cook until bacon is crisp and browned.
                 \n2. Remove bacon pieces and set aside, leaving the fat in the pot.
                 \n3. Add butter and chopped onion and cook over medium heat until onions are tender (3-5 minutes).
                 \n4. Add garlic and cook until fragrant (about 30 seconds).

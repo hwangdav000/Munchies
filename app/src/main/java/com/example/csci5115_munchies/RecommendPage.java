@@ -16,6 +16,7 @@ public class RecommendPage extends AppCompatActivity {
         setContentView(R.layout.activity_recommend_page);
 
         ImageButton personalityButton = (ImageButton) findViewById(R.id.imageButton);
+        personalityButton.setBackgroundResource(R.drawable.roundedcorners);
         personalityButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(RecommendPage.this, PersonalityStart.class));
@@ -23,6 +24,7 @@ public class RecommendPage extends AppCompatActivity {
         });
 
         ImageButton ingredientsButton = (ImageButton) findViewById(R.id.imageButton2);
+        ingredientsButton.setBackgroundResource(R.drawable.roundedcorners);
         ingredientsButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(RecommendPage.this, IngredientsRecommendation.class));
@@ -30,6 +32,7 @@ public class RecommendPage extends AppCompatActivity {
         });
 
         ImageButton friendsButton = (ImageButton) findViewById(R.id.imageButton3);
+        friendsButton.setBackgroundResource(R.drawable.roundedcorners);
         friendsButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(RecommendPage.this, FriendsRecommendations.class));

@@ -18,8 +18,8 @@
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="172dp"
-        android:layout_height="159dp"
-        android:layout_marginTop="120dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
         android:adjustViewBounds="true"
         android:background="#FFFFFF"
         android:contentDescription="@string/personality"
@@ -27,44 +27,45 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/istockphoto_1132874311_612x612" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="172dp"
-        android:layout_height="159dp"
-        android:layout_marginBottom="248dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="7dp"
         android:adjustViewBounds="true"
         android:background="#FFFFFF"
         android:contentDescription="@string/ingredients"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:srcCompat="@drawable/healthy_food_clipart_vector" />
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="172dp"
-        android:layout_height="159dp"
-        android:layout_marginBottom="48dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="7dp"
         android:adjustViewBounds="true"
         android:background="#FFFFFF"
         android:contentDescription="@string/friends"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:srcCompat="@drawable/friends" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="388dp"
         android:layout_height="43dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="65dp"
+        android:gravity="center"
         android:text="@string/how_do_you_want_your_recommendations"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,33 +77,33 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="420dp"
-        android:text="@string/personality"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="7dp"
+        android:text="Personality"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="228dp"
-        android:text="@string/ingredients"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="7dp"
+        android:text="Ingredients"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:text="@string/friends"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="7dp"
+        android:text="Friends"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
