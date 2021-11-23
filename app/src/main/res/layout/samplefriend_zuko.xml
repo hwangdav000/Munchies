@@ -71,6 +71,8 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:clickable="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
                     android:onClick="goToRecipe"
                     app:srcCompat="@drawable/potatoimg" />
 
@@ -80,6 +82,8 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:clickable="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
                     android:onClick="goToRecipe"
                     app:srcCompat="@drawable/hearty_vegetarian_soup" />
             </LinearLayout>
@@ -103,6 +107,8 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:clickable="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
                     android:onClick="goToRecipe"
                     app:srcCompat="@drawable/potatoimg" />
 
@@ -112,6 +118,8 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:clickable="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
                     android:onClick="goToRecipe"
                     app:srcCompat="@drawable/hearty_vegetarian_soup" />
 
