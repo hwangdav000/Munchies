@@ -19,7 +19,6 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class FavoritePage extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
     BottomNavigationView bottomNavigationView;
-    private ActivityFavoritePageBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +38,7 @@ public class FavoritePage extends AppCompatActivity implements BottomNavigationV
                 startActivity(new Intent(FavoritePage.this, RecommendPage.class));
             }
         });
-
+        // implements navigation to different activities
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.top_navigation);
         bottomNavigationView.setSelectedItemId(R.id.favoriteIc);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);

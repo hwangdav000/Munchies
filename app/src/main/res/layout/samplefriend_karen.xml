@@ -5,7 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#8BC34A">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/top_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
 
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="160dp"

@@ -5,14 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.csci5115_munchies.PersonalityQuizActivity">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/top_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,16 +33,16 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/recipeName"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:layout_marginLeft="20dp"
                     android:text="Creamy Potato Soup"
                     android:textSize="28sp" />
 
@@ -39,9 +50,9 @@
                     android:id="@+id/favoriteButton"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
+                    android:layout_marginRight="20dp"
                     android:background="@drawable/favorite_border"
                     android:checked="false"
-                    android:layout_marginRight="20dp"
                     android:text=""
                     android:textOff=""
                     android:textOn="" />
@@ -52,30 +63,30 @@
                 android:id="@+id/recipeImg"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                app:srcCompat="@drawable/potatoimg"
-                android:layout_margin="10dp"/>
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/potatoimg" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp" >
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
 
                 <RatingBar
                     android:id="@+id/ratingBar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:saveEnabled="true"
                     android:layout_gravity="left"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="10dp"
-                    android:numStars="5"/>
+                    android:numStars="5"
+                    android:saveEnabled="true" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/dollarsigns"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginRight="20dp"
+                    app:srcCompat="@drawable/dollarsigns" />
 
             </LinearLayout>
 
@@ -87,8 +98,8 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="5dp"
                 android:text="Ingredients:"
-                android:textStyle="bold"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/recipeIngredients"
@@ -116,12 +127,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginBottom="5dp"
                 android:text="Instructions:"
-                android:textStyle="bold"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/recipeInstructions"
