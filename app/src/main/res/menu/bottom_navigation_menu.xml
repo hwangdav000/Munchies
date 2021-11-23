@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/favoriteIc"
+        android:enabled="true"
+        android:icon="@drawable/favorite_icon"
+        android:title="favorites"/>
+
+    <item
+        android:id="@+id/foodIc"
+        android:enabled="true"
+        android:icon="@drawable/food_icon"
+        android:title="recommend"/>
+
+    <item
+        android:id="@+id/profileIc"
+        android:enabled="true"
+        android:icon="@drawable/male_profile_b"
+        android:title="profile"/>
+</menu>

@@ -5,18 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FriendsRecommendations">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/top_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="208dp"
         android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="72dp"
         android:text="Friends"
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -114,6 +123,7 @@
                     android:text="@string/karen_profile" />
 
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

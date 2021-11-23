@@ -5,25 +5,26 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="?attr/actionBarSize">
+    tools:context=".FavoritePage"
+    >
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="200dp"
         android:layout_height="67dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="13dp"
         android:text="@string/favorites"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/top_navigation" />
 
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="372dp"
         android:layout_height="336dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="140dp"
         android:contentDescription="@string/creamy_potato_soup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.589"
@@ -36,24 +37,23 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="184dp"
+        android:layout_marginBottom="192dp"
         android:text="@string/creamy_potato_soup"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="305dp"
         android:layout_height="77dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="72dp"
         android:text="@string/recommend"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ToggleButton
@@ -69,4 +69,13 @@
         app:layout_constraintHorizontal_bias="0.876"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/top_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
