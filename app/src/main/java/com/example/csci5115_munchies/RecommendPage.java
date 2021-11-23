@@ -25,7 +25,7 @@ public class RecommendPage extends AppCompatActivity {
         ImageButton ingredientsButton = (ImageButton) findViewById(R.id.imageButton2);
         ingredientsButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(RecommendPage.this, RecipePage.class));
+                startActivity(new Intent(RecommendPage.this, IngredientsRecommendation.class));
             }
         });
 

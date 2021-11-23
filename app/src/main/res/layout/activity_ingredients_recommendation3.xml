@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="160dp"
-        android:layout_height="69dp"
+        android:layout_width="171dp"
+        android:layout_height="68dp"
         android:layout_marginTop="116dp"
         android:layout_marginEnd="64dp"
         android:text="Potatoes"
@@ -136,8 +136,8 @@
 
     <TextView
         android:id="@+id/textView19"
-        android:layout_width="157dp"
-        android:layout_height="68dp"
+        android:layout_width="171dp"
+        android:layout_height="61dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="64dp"
         android:text="Bacon"

@@ -9,9 +9,9 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="186dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="200dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="24dp"
         android:text="@string/favorites"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,12 +21,12 @@
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:layout_width="384dp"
-        android:layout_height="364dp"
-        android:layout_marginTop="112dp"
+        android:layout_width="372dp"
+        android:layout_height="336dp"
+        android:layout_marginTop="100dp"
         android:contentDescription="@string/creamy_potato_soup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/potatoimg"
@@ -36,12 +36,12 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="152dp"
+        android:layout_marginBottom="184dp"
         android:text="@string/creamy_potato_soup"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -54,6 +54,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="63dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="172dp"
+        android:background="@drawable/togglebutton_selector"
+        android:text="ToggleButton"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
