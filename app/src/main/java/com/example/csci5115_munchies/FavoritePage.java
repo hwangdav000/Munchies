@@ -1,8 +1,8 @@
 package com.example.csci5115_munchies;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -10,12 +10,7 @@ import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import android.view.MenuItem;
-import com.example.csci5115_munchies.databinding.ActivityFavoritePageBinding;
-import com.google.android.material.navigation.NavigationBarView;
 
 public class FavoritePage extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
     BottomNavigationView bottomNavigationView;
