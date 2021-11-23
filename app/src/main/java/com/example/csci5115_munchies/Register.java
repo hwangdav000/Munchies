@@ -5,6 +5,7 @@ import android.widget.Button;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
+import android.widget.ListView;
 
 public class Register extends AppCompatActivity {
     private Button button;
@@ -13,6 +14,7 @@ public class Register extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
+
 
         button = (Button) findViewById(R.id.toHome);
         button.setOnClickListener(new View.OnClickListener() {

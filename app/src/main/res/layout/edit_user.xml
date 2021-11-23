@@ -4,17 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blue_gradient"
     tools:context=".EditName">
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/top_navigation"
-        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:menu="@menu/bottom_navigation_menu" />
     <TextView
         android:id="@+id/EditName"
         android:layout_width="wrap_content"
