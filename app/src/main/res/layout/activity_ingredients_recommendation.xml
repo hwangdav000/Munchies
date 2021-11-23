@@ -42,6 +42,7 @@
         android:layout_marginTop="168dp"
         android:layout_marginEnd="24dp"
         android:text="Add"
+        android:backgroundTint="#10D318"
         android:onClick="goToIngredient2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.7"
