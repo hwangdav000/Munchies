@@ -1,16 +1,20 @@
 package com.example.csci5115_munchies;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.RatingBar;
@@ -18,7 +22,9 @@ import android.widget.ToggleButton;
 
 import com.example.csci5115_munchies.databinding.ActivityRecipePageBinding;
 
-public class RecipePage extends AppCompatActivity {
+public class RecipePage extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+    BottomNavigationView bottomNavigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,5 +42,27 @@ public class RecipePage extends AppCompatActivity {
                 }
             }
         });
+
+        // implements navigation to different activities
+        bottomNavigationView = (BottomNavigationView) findViewById(R.id.top_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.favoriteIc);
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
+    }
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item){
+        switch (item.getItemId()) {
+            case R.id.favoriteIc:
+                startActivity(new Intent(this, FavoritePage.class));
+                return true;
+
+            case R.id.profileIc:
+                startActivity(new Intent(this, Profile.class));
+                return true;
+
+            case R.id.foodIc:
+                startActivity(new Intent(this, RecommendPage.class));
+                return true;
+        }
+        return true;
     }
 }
