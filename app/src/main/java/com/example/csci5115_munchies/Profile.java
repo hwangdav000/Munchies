@@ -23,7 +23,7 @@ public class Profile extends AppCompatActivity {
     private Button button;
     ListView listView;
     String[] mTitle = {"Batman bat", "Zuko zuk", "Karen Notareal"};
-    String[] mDescription = {"ID: 42379vbs", "ID: cvjk427wl" ,"ID: 18env45h9"};
+    String[] mDescription = {"ID: bruce3333", "ID: zuken222" ,"ID: kare155"};
     int[] images = {R.drawable.batman, R.drawable.zuko, R.drawable.fake_friend_3};
 
     @Override
