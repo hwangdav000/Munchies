@@ -44,12 +44,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:showDividers="middle">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#3F51B5"
                 android:clickable="true"
                 android:onClick="goToBatman"
                 android:orientation="horizontal">
@@ -70,14 +74,17 @@
                     android:layout_width="115dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/batman_profile" />
+                    android:text="@string/batman_profile"
+                    android:textColor="#000000" />
 
             </LinearLayout>
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#B53F3F"
                 android:clickable="true"
                 android:onClick="goToZuko"
                 android:orientation="horizontal">
@@ -95,14 +102,17 @@
                     android:layout_width="115dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/zuko_profile" />
+                    android:text="@string/zuko_profile"
+                    android:textColor="#000000" />
 
             </LinearLayout>
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#8BC34A"
                 android:clickable="true"
                 android:onClick="goToKaren"
                 android:orientation="horizontal">
@@ -120,9 +130,14 @@
                     android:layout_width="115dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/karen_profile" />
+                    android:text="@string/karen_profile"
+                    android:textColor="#000000" />
 
             </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
 
         </LinearLayout>
     </ScrollView>
