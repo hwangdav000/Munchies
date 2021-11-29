@@ -59,21 +59,21 @@ public class Profile extends AppCompatActivity {
 
         MyAdapter adapter = new MyAdapter(this, mTitle, mDescription, images);
         listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0) {
-                    Toast.makeText(Profile.this, "test", Toast.LENGTH_SHORT).show();
-                }
-                if (position == 1) {
-                    Toast.makeText(Profile.this, "test1", Toast.LENGTH_SHORT).show();
-                }
-                if (position == 2) {
-                    Toast.makeText(Profile.this, "test2", Toast.LENGTH_SHORT).show();
-                }
-
-            }
-        });
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                if (position == 0) {
+//                    Toast.makeText(Profile.this, "test", Toast.LENGTH_SHORT).show();
+//                }
+//                if (position == 1) {
+//                    Toast.makeText(Profile.this, "test1", Toast.LENGTH_SHORT).show();
+//                }
+//                if (position == 2) {
+//                    Toast.makeText(Profile.this, "test2", Toast.LENGTH_SHORT).show();
+//                }
+//
+//            }
+//        });
 
 
     }
