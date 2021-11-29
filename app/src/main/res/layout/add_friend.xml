@@ -27,7 +27,7 @@
         android:layout_marginTop="15dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="ID of Friend"
+        android:hint="ID of Friend"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 

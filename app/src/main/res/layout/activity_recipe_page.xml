@@ -52,7 +52,7 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_marginRight="20dp"
-                    android:background="@drawable/favorite_fill"
+                    android:background="@drawable/favorite_border"
                     android:checked="false"
                     android:text=""
                     android:textOff=""
