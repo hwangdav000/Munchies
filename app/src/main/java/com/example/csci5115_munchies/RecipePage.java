@@ -45,9 +45,10 @@ public class RecipePage extends AppCompatActivity implements BottomNavigationVie
 
         // implements navigation to different activities
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.top_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.favoriteIc);
+        bottomNavigationView.setSelectedItemId(R.id.foodIc);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
     }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item){
         switch (item.getItemId()) {

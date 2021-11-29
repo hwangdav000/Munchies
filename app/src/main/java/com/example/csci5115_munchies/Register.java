@@ -7,6 +7,8 @@ import android.view.View;
 import android.content.Intent;
 import android.widget.ListView;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 public class Register extends AppCompatActivity {
     private Button button;
 

@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.text.Layout;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -19,7 +20,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Profile extends AppCompatActivity {
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+public class Profile extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
     private Button button;
     ListView listView;
     String[] mTitle = {"Batman bat", "Zuko zuk", "Karen Notareal"};
@@ -74,8 +77,28 @@ public class Profile extends AppCompatActivity {
 //
 //            }
 //        });
+        // implements navigation to different activities
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.top_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.profileIc);
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
 
+    }
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item){
+        switch (item.getItemId()) {
+            case R.id.favoriteIc:
+                startActivity(new Intent(this, FavoritePage.class));
+                return true;
 
+            case R.id.profileIc:
+                startActivity(new Intent(this, Profile.class));
+                return true;
+
+            case R.id.foodIc:
+                startActivity(new Intent(this, RecommendPage.class));
+                return true;
+        }
+        return true;
     }
 
     class MyAdapter extends ArrayAdapter<String> {

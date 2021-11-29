@@ -59,6 +59,7 @@ public class RecommendPage extends AppCompatActivity implements BottomNavigation
     public boolean onNavigationItemSelected(@NonNull MenuItem item){
         switch (item.getItemId()) {
             case R.id.favoriteIc:
+                startActivity(new Intent(this, FavoritePage.class));
                 return true;
 
             case R.id.profileIc:

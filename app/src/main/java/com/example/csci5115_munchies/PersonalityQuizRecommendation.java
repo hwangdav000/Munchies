@@ -25,7 +25,7 @@ public class PersonalityQuizRecommendation extends AppCompatActivity implements 
         layout.setBackgroundResource(R.drawable.roundedcorners);
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.top_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.favoriteIc);
+        bottomNavigationView.setSelectedItemId(R.id.foodIc);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
     }
 
@@ -39,6 +39,7 @@ public class PersonalityQuizRecommendation extends AppCompatActivity implements 
     public boolean onNavigationItemSelected(@NonNull MenuItem item){
         switch (item.getItemId()) {
             case R.id.favoriteIc:
+                startActivity(new Intent(this, FavoritePage.class));
                 return true;
 
             case R.id.profileIc:
